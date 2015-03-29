@@ -1,0 +1,90 @@
+body {
+  background: url('background_web.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin:0;
+}
+
+img.dykkersykeLogo {
+  width: 100%;
+  -webkit-filter: drop-shadow( -5px -5px 6px #000 );
+  filter: drop-shadow( -5px -5px 6px #000 );
+}
+
+div.menuContainer {
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  position: absolute;
+  align-items: flex-end;
+
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: flex-end; /* Safari 7.0+ */
+  -webkit-flex-direction: column;
+}
+
+div.menuChild {
+  max-width: 80%;
+  width: 360px;
+  margin: 8% 4% 4% 0;
+}
+
+iframe {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  background: black;
+  opacity: 0.6;
+
+}
+
+div.menu {
+  display: inline-block;
+  margin: 15% 14% 0 0;
+  max-width: 580px;
+  text-shadow: -3px -3px 6px #000000;
+  color: white;
+  font-family: "europa-1","europa-2";
+  font-weight: bold;
+  text-align: right;
+}
+
+
+img.cover {
+  width: 40vh;
+  height: 40vh;
+  max-width: 45vw;
+  max-height: 45vw;
+
+  border: 2px solid white;
+
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 50px;
+  left: 5vh;
+  color: #FFF;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+   transform: rotate(-10deg);
+}
+
+@media (min-width : 320px) {
+  div.menu {
+    font-size: 2em;
+  }
+}
+@media (min-width : 640px) {
+  div.menu {
+    font-size: 3em;
+  }
+}
+@media (min-width : 1024px) {
+  div.menu {
+    font-size: 3.5em;
+  }
+}
